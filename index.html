@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Glass Slipper Blooms – Fairytale Bouquets</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg1:#ffeef6;--bg2:#ece6ff;--bg3:#e3f1ff;--ink:#4a3b5c;--mut:#7d6e92;--card:rgba(255,255,255,.62);--bd:rgba(255,255,255,.9);--pink:#f48fb1;--lav:#b39ddb;--glow:rgba(244,143,177,.45);--sh:0 10px 30px rgba(179,157,219,.28);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#2a1c33;--bg2:#1f1b38;--bg3:#16253a;--ink:#f7e9f5;--mut:#c4b5d8;--card:rgba(60,45,85,.55);--bd:rgba(255,255,255,.14);--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg1:#2a1c33;--bg2:#1f1b38;--bg3:#16253a;--ink:#f7e9f5;--mut:#c4b5d8;--card:rgba(60,45,85,.55);--bd:rgba(255,255,255,.14);--sh:0 10px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Quicksand,system-ui,sans-serif;color:var(--ink);background:linear-gradient(160deg,var(--bg1),var(--bg2) 50%,var(--bg3)) fixed;overflow-x:hidden}
+h1,h2,.script{font-family:"Great Vibes",cursive;font-weight:400}
+h2{font-size:2.6rem;text-align:center;margin:0 0 6px}
+section{padding:56px 18px;max-width:1150px;margin:auto;position:relative}
+nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:10px 18px;padding-top:calc(10px + env(safe-area-inset-top,0px));background:var(--card);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav .logo{font-family:"Great Vibes",cursive;font-size:1.7rem}
+nav a{color:var(--ink);text-decoration:none;margin:0 8px;font-weight:600;font-size:.9rem}
+.navl{display:flex;align-items:center;overflow-x:auto}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:10px 18px;font-weight:600;transition:.25s}
+.btn{background:linear-gradient(135deg,var(--pink),var(--lav));color:#fff;box-shadow:0 6px 18px var(--glow)}
+.btn:hover{transform:translateY(-2px) scale(1.04);box-shadow:0 8px 26px var(--glow)}
+.ghost{background:transparent;border:1.5px solid var(--lav);color:var(--ink)}
+.glass{background:var(--card);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:24px;box-shadow:var(--sh)}
+.hero{text-align:center;padding-top:40px;display:grid;gap:22px;justify-items:center}
+.hero h1{font-size:clamp(2.8rem,9vw,5rem);margin:0;line-height:1.05;text-shadow:0 0 24px var(--glow)}
+.hero p{font-size:1.15rem;color:var(--mut);margin:0}
+.hero img{width:min(320px,80vw);border-radius:50% 50% 46% 46%;box-shadow:0 0 50px var(--glow);animation:bob 5s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:20px;margin-top:26px}
+.card{overflow:hidden;display:flex;flex-direction:column;transition:.3s}
+.card:hover{transform:translateY(-6px) rotate(-.4deg);box-shadow:0 16px 40px var(--glow)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;background:#fde}
+.card .b{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{margin:0;font-size:1.05rem}.price{color:var(--pink);font-weight:700;font-size:1.1rem}
+.card p{margin:0;color:var(--mut);font-size:.88rem;flex:1}
+.row{display:flex;gap:8px}.row button{flex:1;padding:9px 6px;font-size:.85rem}
+.wa{width:100%;background:#25d366;color:#fff;box-shadow:0 6px 16px rgba(37,211,102,.35)}.wa:hover{transform:translateY(-2px) scale(1.03)}
+.up{position:relative;overflow:hidden}.up input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer;margin:0;padding:0;border:0;font-size:0}
+.up{display:block;text-align:center;margin:6px 0 10px;cursor:pointer}
+@media(max-width:640px){.navl a{display:none}nav .logo{font-size:1.3rem}}
+.fl{position:fixed;pointer-events:none;z-index:1;opacity:.85;animation:rise linear forwards}
+@keyframes rise{from{transform:translateY(0) rotate(0)}to{transform:translateY(-110vh) rotate(40deg);opacity:0}}
+.sky{position:fixed;inset:0;pointer-events:none;z-index:0;font-size:1.3rem}
+.sky span{position:absolute;opacity:.45;animation:tw 4s ease-in-out infinite}
+@keyframes tw{50%{opacity:.9;transform:scale(1.3) rotate(10deg)}}
+main,nav,footer{position:relative;z-index:2}
+.rv{opacity:0;transform:translateY(24px);transition:.8s}.rv.on{opacity:1;transform:none}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:22px}
+.revs div{padding:18px}
+.two{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.pad{padding:24px}
+footer{text-align:center;padding:36px 18px calc(36px + env(safe-area-inset-bottom,0px));color:var(--mut)}
+footer a{color:var(--ink);margin:0 10px;font-weight:600}
+.ov{position:fixed;inset:0;background:rgba(60,30,80,.45);z-index:50;display:none;justify-content:flex-end;backdrop-filter:blur(3px)}
+.ov.show{display:flex}
+.pnl{width:min(440px,100%);height:100%;overflow-y:auto;padding:20px;padding-top:calc(20px + env(safe-area-inset-top,0px));background:var(--bg1);color:var(--ink)}
+.pnl.wide{width:min(900px,100%)}
+.ov.mid{justify-content:center;align-items:center}.ov.mid .pnl{height:auto;max-height:92%;border-radius:24px}
+input,textarea{width:100%;padding:10px 12px;border-radius:14px;border:1.5px solid var(--lav);background:var(--card);color:var(--ink);font:inherit;margin:4px 0 8px}
+.ci{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd)}
+.ci img{width:54px;height:54px;border-radius:12px;object-fit:cover}.ci .n{flex:1;font-size:.9rem}
+.q button{padding:2px 10px;background:var(--lav);color:#fff}
+.slot{padding:14px;margin-bottom:14px}.slot img{width:90px;height:90px;border-radius:14px;object-fit:cover;float:right;margin-left:10px}
+.tot{font-size:1.2rem;font-weight:700;margin:14px 0;text-align:right}
+.hid{display:none}.note{color:var(--mut);font-size:.85rem}
+</style></head><body>
+<div class="sky" id="sky"></div>
+<nav><span class="logo">Glass Slipper Blooms</span><div class="navl"><a href="#shop">Shop</a><a href="#reviews">Reviews</a><a href="#about">About</a><a href="#contact">Contact</a><button class="ghost" id="adminBtn" style="display:none">Admin</button><button class="btn" id="cartBtn">🛒 <span id="cc">0</span></button></div></nav>
+<main>
+<section class="hero"><span class="script" style="font-size:1.6rem">🏰 Once upon a bloom… 👠</span>
+<h1>A Little Magic in Every Bouquet</h1><p>Make Every Moment Bloom With Love.</p>
+<img id="heroImg" alt="Dreamy flower bouquet"><button class="btn" onclick="document.getElementById('shop').scrollIntoView()">Shop Bouquets</button></section>
+<section id="shop" class="rv"><h2>Our Enchanted Bouquets</h2><p class="note" style="text-align:center" id="shopNote"></p><div class="grid" id="grid"></div></section>
+<section id="reviews" class="rv"><h2>Happy Princesses</h2><div class="revs">
+<div class="glass">⭐⭐⭐⭐⭐<p>“The bouquet looked like it stepped out of a fairytale. She cried happy tears!”</p><b>— Aanya</b></div>
+<div class="glass">⭐⭐⭐⭐⭐<p>“Fresh, fragrant and wrapped so prettily. Delivery was right on time.”</p><b>— Riya</b></div>
+<div class="glass">⭐⭐⭐⭐⭐<p>“Ordering on WhatsApp took one minute. Best birthday surprise ever.”</p><b>— Meera</b></div></div></section>
+<section id="about" class="rv"><div class="glass pad"><h2>About Us</h2><p style="text-align:center;max-width:640px;margin:auto;color:var(--mut)">We are a tiny boutique that arranges every bouquet by hand, with pastel petals, satin ribbons and a sprinkle of fairytale magic. Because every girl deserves flowers worth a royal ball. 💖</p></div></section>
+<section id="contact" class="rv"><div class="glass pad"><h2>Contact Us</h2><p style="text-align:center;color:var(--mut)">Custom bouquets, weddings and gifting? Message us and we’ll make it bloom.<br><br><button class="btn" id="waContact">Chat on WhatsApp</button></p></div></section>
+</main>
+<footer><div class="script" style="font-size:1.8rem">Glass Slipper Blooms</div><p><a id="igLink" href="#" target="_blank" rel="noopener">Instagram</a><a id="waLink" href="#" target="_blank" rel="noopener">WhatsApp</a></p><small>Made with 💖 and a little magic</small></footer>
+
+<div class="ov" id="cartOv"><div class="pnl"><h2 style="text-align:left">Your Cart 🛒</h2><div id="cartList"></div><div class="tot" id="cartTot"></div><button class="btn" style="width:100%" id="toCheckout">Checkout</button><button class="ghost" style="width:100%;margin-top:8px" data-close>Keep browsing</button></div></div>
+<div class="ov mid" id="coOv"><div class="pnl"><h2 style="text-align:left">Checkout ✨</h2><div id="coSum" class="note"></div>
+<input id="cn" placeholder="Your name" autocomplete="name"><input id="cp" placeholder="Phone number" inputmode="tel" autocomplete="tel"><textarea id="ca" rows="3" placeholder="Delivery address"></textarea>
+<div class="tot" id="coTot"></div><button class="btn" style="width:100%" id="place">Place Order on WhatsApp</button><button class="ghost" style="width:100%;margin-top:8px" data-close>Back</button></div></div>
+<div class="ov" id="adOv"><div class="pnl wide"><div class="row"><h2 style="text-align:left;flex:3">Admin Studio 🌸</h2><button class="ghost" data-close>Close</button></div>
+<div class="glass slot"><b>Shop settings</b><input id="sWa" placeholder="WhatsApp number with country code, e.g. 919876543210"><input id="sIg" placeholder="Instagram username (without @)"><button class="btn" id="sSave">Save settings</button></div>
+<p class="note">10 bouquet slots. Upload a photo, fill in the details, preview, then Save to publish. Empty slots show a placeholder.</p><div id="slots"></div>
+<h3>Recent orders</h3><div id="orders" class="note">Loading…</div></div></div>
+<div class="ov mid" id="waOv"><div class="pnl"><h2 style="text-align:left">Almost there 💖</h2><div id="waSum" style="font-weight:700"></div><p class="note">Tap the green button to open WhatsApp with your order message ready, then press Send.</p><a id="waGo" class="btn wa" target="_blank" rel="noopener noreferrer" style="display:block;text-align:center;text-decoration:none;padding:14px;border-radius:999px;margin:12px 0" onclick="setTimeout(shut,500)">💬 Message Seller on WhatsApp</a><button class="ghost" style="width:100%" data-close>Cancel</button></div></div>
+<script>
+const NAMES=["Cinderella Blush","Royal Lavender Dream","Glass Slipper Roses","Fairy Godmother Peonies","Midnight Ball Orchids","Pumpkin Carriage Daisies","Castle Garden Mix","Starlight Tulips","Butterfly Meadow","Happily Ever After Lilies"];
+const DESC=["Soft pink roses with baby’s breath","Lavender and white blooms, satin ribbon","Dozen pastel roses in a keepsake wrap","Fluffy peonies for a royal surprise","Elegant orchids with silver sparkle","Sunny daisies, cheerful and cute","A garden of mixed pastel flowers","Fresh tulips tied with a pearl bow","Wildflowers that flutter with joy","Stately lilies for an unforgettable day"];
+const PH=[["#ffd1e3","#e0c3fc"],["#e0c3fc","#c3e0ff"],["#ffc2d6","#ffe3ef"],["#fbc2eb","#a6c1ee"],["#c3e0ff","#e0c3fc"],["#fff1c1","#ffd1e3"],["#d4f1ff","#ffd1e3"],["#ffd6e8","#d9c7ff"],["#e8d4ff","#c9f0e4"],["#ffe0ec","#d4e4ff"]];
+const E=["🌹","💐","🌷","🌸","🌺","🌼","🌻","🪻","🦋","🪷"];
+const ph=i=>"data:image/svg+xml,"+encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${PH[i][0]}"/><stop offset="1" stop-color="${PH[i][1]}"/></linearGradient></defs><rect width="300" height="300" fill="url(#g)"/><text x="150" y="175" font-size="110" text-anchor="middle">${E[i]}</text><text x="150" y="265" font-size="26" text-anchor="middle" fill="#fff">✨ ✦ ✨</text></svg>`);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=id=>document.getElementById(id), inr=n=>"₹"+Number(n).toLocaleString("en-IN");
+let uid=null,db=null,assets=null,P={},S={},cart={},draft={};
+const item=i=>{const p=P[i]||{};return{i,name:p.name||NAMES[i],price:Number(p.price)||(599+i*100),desc:p.desc||DESC[i],img:p.img||ph(i)}};
+function safeLS(k,v){try{if(v===undefined)return JSON.parse(localStorage.getItem(k));localStorage.setItem(k,JSON.stringify(v))}catch(e){return null}}
+cart=safeLS("cart")||{};
+// ambient magic
+const sk=$("sky");["✨","🦋","⭐","🏰","👠","🌸","🦋","✨","💫","🌷"].forEach((s,i)=>{const e=document.createElement("span");e.textContent=s;e.style.cssText=`left:${(i*37+8)%92}%;top:${(i*53+6)%88}%;animation-delay:${i*.6}s;font-size:${.9+(i%3)*.3}rem`;sk.appendChild(e)});
+function floatUp(x,y,t){const e=document.createElement("div");e.className="fl";e.textContent=t;e.style.cssText=`left:${x}px;top:${y}px;font-size:${16+Math.random()*14}px;animation-duration:${3+Math.random()*2}s`;document.body.appendChild(e);setTimeout(()=>e.remove(),5200)}
+setInterval(()=>floatUp(Math.random()*innerWidth,innerHeight-30,["💗","💖","✨","🦋"][Math.floor(Math.random()*4)]),1800);
+document.addEventListener("click",e=>{for(let k=0;k<5;k++)floatUp(e.clientX+k*6-12,e.clientY,k%2?"✨":"💗")});
+const io=new IntersectionObserver(es=>es.forEach(x=>x.isIntersecting&&x.target.classList.add("on")),{threshold:.1});
+document.querySelectorAll(".rv").forEach(e=>io.observe(e));
+$("heroImg").src=ph(0);
+// shop
+function render(){
+ $("grid").innerHTML=[...Array(10).keys()].map(i=>{const p=item(i);return`<article class="card glass"><img loading="lazy" src="${esc(p.img)}" alt="${esc(p.name)}"><div class="b"><h3>${esc(p.name)}</h3><div class="price">${inr(p.price)}</div><p>${esc(p.desc)}</p><div class="row"><button class="ghost" data-add="${i}">Add to Cart</button><button class="btn" data-wa="${i}">Buy Now 💬</button></div></div></article>`}).join("");
+ const hp=P[1]&&P[1].img;if(hp)$("heroImg").src=hp;
+ const wa=(S.wa||"").replace(/\D/g,""),ig=(S.ig||"").replace(/[@\s]/g,"");
+ $("waLink").href=$("waContact").dataset.href=wa?"https://wa.me/"+wa:"#";$("igLink").href=ig?"https://instagram.com/"+ig:"#";
+ 
+ renderCart();
+}
+function renderCart(){
+ const ks=Object.keys(cart).filter(k=>cart[k]>0);let tot=0,n=0;
+ $("cartList").innerHTML=ks.length?ks.map(k=>{const p=item(+k),q=cart[k];tot+=p.price*q;n+=q;return`<div class="ci"><img src="${esc(p.img)}" alt=""><div class="n">${esc(p.name)}<br><b>${inr(p.price)}</b></div><div class="q"><button data-m="${k}">−</button> ${q} <button data-p="${k}">+</button></div><button data-x="${k}" aria-label="Remove">🗑️</button></div>`}).join(""):'<p class="note">Your cart is empty. Let’s find some flowers 🌸</p>';
+ $("cartTot").textContent=ks.length?"Total: "+inr(tot):"";$("cc").textContent=n;$("toCheckout").style.display=ks.length?"":"none";cart.__t=tot;safeLS("cart",Object.fromEntries(ks.map(k=>[k,cart[k]])));
+}
+const open=id=>$(id).classList.add("show"),shut=()=>document.querySelectorAll(".ov").forEach(o=>o.classList.remove("show"));
+function checkout(){const ks=Object.keys(cart).filter(k=>k!=="__t"&&cart[k]>0);if(!ks.length)return;
+ $("coSum").innerHTML=ks.map(k=>`${esc(item(+k).name)} × ${cart[k]}`).join("<br>");$("coTot").textContent="Total: "+inr(cart.__t);shut();open("coOv")}
+document.addEventListener("click",e=>{const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+ if(d.add!==undefined){cart[d.add]=(cart[d.add]||0)+1;renderCart();t.textContent="Added 💖";setTimeout(()=>t.textContent="Add to Cart",900)}
+ if(d.wa!==undefined){const p=item(+d.wa),w=(S.wa||"").replace(/\D/g,"");if(!w)return alert("The shop’s WhatsApp number is not set yet.");let link="";if(p.img&&p.img.slice(0,5)!=="data:"){try{link=new URL(p.img,location.href).href}catch(x){link=p.img}}
+  waShow(p,"https://wa.me/"+w+"?text="+encodeURIComponent(`Hi! 🌸 I want to buy this bouquet:\n\n💐 ${p.name}\n💰 ${inr(p.price)}`+(link?`\n📷 Photo: ${link}`:"")+`\n\nMy name:\nDelivery address:\nPhone:\n\nPlease confirm availability and delivery. Thank you! 💖`))}
+ if(d.buy!==undefined){cart[d.buy]=(cart[d.buy]||0)+1;renderCart();checkout()}
+ if(d.p)cart[d.p]++,renderCart();if(d.m){cart[d.m]=Math.max(0,cart[d.m]-1);renderCart()}if(d.x){delete cart[d.x];renderCart()}
+ if(t.hasAttribute("data-close"))shut()});
+$("cartBtn").onclick=()=>open("cartOv");$("toCheckout").onclick=checkout;
+$("waContact").onclick=e=>{const h=e.target.dataset.href;h&&h!=="#"?open_(h):alert("WhatsApp number not set yet.")};
+const waShow=(p,u)=>{$("waSum").textContent=p.name+" · "+inr(p.price);$("waGo").href=u;open("waOv")};
+const open_=u=>{const a=document.createElement("a");a.href=u;a.target="_blank";a.rel="noopener noreferrer";document.body.appendChild(a);a.click();a.remove()};
+$("place").onclick=async()=>{const nm=$("cn").value.trim(),ph_=$("cp").value.trim(),ad=$("ca").value.trim();
+ if(!nm||!ph_||!ad)return alert("Please fill in your name, phone and address 💕");
+ const ks=Object.keys(cart).filter(k=>k!=="__t"&&cart[k]>0),lines=ks.map(k=>{const p=item(+k);return`• ${p.name} × ${cart[k]} = ${inr(p.price*cart[k])}`});
+ const msg=`🌸 New Order 🌸\n${lines.join("\n")}\n\nTotal: ${inr(cart.__t)}\n\nName: ${nm}\nPhone: ${ph_}\nAddress: ${ad}`;
+ const wa=(S.wa||"").replace(/\D/g,"");if(!wa)return alert("The shop’s WhatsApp number is not set yet.");
+ if(db&&uid)(async()=>{try{const r=db.doc("orders/"+uid),o=(await r.get()).data()||{};await r.set({orders:[{name:nm,phone:ph_,address:ad,lines,total:cart.__t,at:Date.now()},...(o.orders||[])].slice(0,20)})}catch(e){}})();
+ open_("https://wa.me/"+wa+"?text="+encodeURIComponent(msg));cart={};renderCart();shut();alert("Your order summary is ready in WhatsApp. Just press send! 💖")};
+// admin
+function slotHtml(i){const p=item(i),d=draft[i]||{};return`<div class="glass slot" data-s="${i}"><img src="${esc(d.img||p.img)}" alt=""><b>Slot ${i+1}</b>${P[i]?" ✅ published":""}<input data-f="name" value="${esc(d.name??p.name)}" placeholder="Bouquet name"><input data-f="price" type="number" value="${esc(d.price??p.price)}" placeholder="Price ₹"><textarea data-f="desc" rows="2" placeholder="Description">${esc(d.desc??p.desc)}</textarea><label class="btn up">📷 Upload photo<input type="file" accept="image/*" data-file></label><div class="row"><button class="ghost" data-pv="${i}">Preview</button><button class="btn" data-sv="${i}">Save</button><button class="ghost" data-dl="${i}">Delete</button></div></div>`}
+function renderAdmin(){$("slots").innerHTML=[...Array(10).keys()].map(slotHtml).join("");$("sWa").value=S.wa||"";$("sIg").value=S.ig||""}
+const rd=i=>{const el=document.querySelector(`[data-s="${i}"]`);const o={};el.querySelectorAll("[data-f]").forEach(x=>o[x.dataset.f]=x.value);return o};
+function shrink(f){return new Promise((ok,no)=>{const im=new Image();im.onload=()=>{const r=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*r;c.height=im.height*r;c.getContext("2d").drawImage(im,0,0,c.width,c.height);c.toBlob(b=>b?ok(b):no(),"image/jpeg",.82)};im.onerror=no;im.src=URL.createObjectURL(f)})}
+$("slots").addEventListener("change",async e=>{if(!e.target.dataset.file||!e.target.files[0])return;if(!assets)return alert("Photo upload is not available. Please open this page while signed in to the Claude account that owns it.");const i=+e.target.closest("[data-s]").dataset.s;
+ try{const b=await shrink(e.target.files[0]),a=await assets.upload(b);draft[i]={...rd(i),img:a.url,imgId:a.id};renderAdmin()}catch(x){alert("Upload failed: "+(x.message||x))}});
+$("slots").addEventListener("click",async e=>{const t=e.target.closest("button");if(!t)return;const d=t.dataset;
+ if(d.pv!==undefined){const i=+d.pv,v={...rd(i),...(draft[i]||{})};draft[i]={...draft[i],...rd(i)};const p=draft[i];shut();P[i]={...P[i],name:p.name,price:p.price,desc:p.desc,img:p.img||(P[i]&&P[i].img)};render();document.getElementById("shop").scrollIntoView();setTimeout(()=>alert("Preview shown (not saved yet). Open Admin and press Save to publish."),400)}
+ if(d.sv!==undefined){const i=+d.sv,v={...rd(i),...(draft[i]||{})},old=P[i]||{};if(!v.name||!(+v.price>0))return alert("Please add a name and a price.");
+  try{await db.doc("products/p"+i).set({name:v.name,price:+v.price,desc:v.desc||"",img:v.img||old.img||"",imgId:v.imgId||old.imgId||"",slot:i});delete draft[i];t.textContent="Saved ✓"}catch(x){alert("Save failed: "+(x.message||x))}}
+ if(d.dl!==undefined&&confirm("Delete this bouquet?")){const i=+d.dl;try{await db.doc("products/p"+i).delete();if(P[i]&&P[i].imgId&&assets)assets.delete(P[i].imgId).catch(()=>{});delete draft[i];delete P[i];render();renderAdmin()}catch(x){alert("Delete failed")}}});
+$("sSave").onclick=async()=>{try{await db.doc("settings/shop").set({wa:$("sWa").value,ig:$("sIg").value});$("sSave").textContent="Saved ✓"}catch(x){alert("Could not save")}};
+// data
+P={"0": {"name": "Sunset Chenille Blooms", "price": 899, "desc": "Handmade orange and cream flowers in a golden-edge wrap", "img": "images/bouquet1.jpg"}, "1": {"name": "Ruby Satin Roses", "price": 699, "desc": "Shiny red satin roses in marble wrap with a ribbon bow", "img": "images/bouquet2.jpg"}, "2": {"name": "Sunshine Sunflower", "price": 599, "desc": "Cheerful handmade sunflowers in black and yellow wrap", "img": "images/bouquet3.jpg"}, "3": {"name": "Red Rose Charm", "price": 799, "desc": "Glittery red satin roses in a black and gold wrap", "img": "images/bouquet4.jpg"}, "4": {"name": "Memory Lily Bouquet", "price": 749, "desc": "Pink lily with photo cards and a purple satin bow", "img": "images/bouquet5.jpg"}, "5": {"name": "Midnight Blush Roses", "price": 1499, "desc": "Dusty pink and black roses with soft pampas touches", "img": "images/bouquet6.jpg"}, "6": {"name": "Romance in Red and Black", "price": 1799, "desc": "Red, white and black roses with a sheer black ribbon", "img": "images/bouquet7.jpg"}, "7": {"name": "Pure White Roses", "price": 1299, "desc": "Fresh white roses with baby’s breath, elegantly wrapped", "img": "images/bouquet8.jpg"}, "8": {"name": "Royal Red Rose Bouquet", "price": 1999, "desc": "A grand bunch of red roses in white marble wrap", "img": "images/bouquet9.jpg"}, "9": {"name": "Memory Lily Bouquet II", "price": 749, "desc": "Pink lily with photo cards and a purple satin bow", "img": "images/bouquet10.jpg"}};S={"wa": "916299329230", "ig": "mehak_fuzzyart"};
+render();
+</script></body></html>
